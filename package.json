@@ -4,7 +4,8 @@
   "description": "a hapi/bookshelf/knex boilerplate",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "db": "knex migrate:latest && knex seed:run"
   },
   "author": "ag_dubs <ashley666ashley@gmail.com> (http://ashleygwilliams.github.io)",
   "license": "MIT",
@@ -13,6 +14,7 @@
     "url": "https://github.com/ashleygwilliams/jocular.git"
   },
   "dependencies": {
+    "bookshelf": "^0.8.1",
     "hapi": "^8.6.1",
     "knex": "^0.8.6",
     "sqlite3": "^3.0.8"
