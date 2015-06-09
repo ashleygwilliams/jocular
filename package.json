@@ -1,0 +1,23 @@
+{
+  "name": "jocular",
+  "version": "0.0.0",
+  "description": "a hapi/bookshelf/knex boilerplate",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "ag_dubs <ashley666ashley@gmail.com> (http://ashleygwilliams.github.io)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleygwilliams/jocular.git"
+  },
+  "dependencies": {
+    "hapi": "^8.6.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "npm": "^2.5.1",
+    "node": "^0.12.1"
+  }
+}
