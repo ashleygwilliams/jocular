@@ -13,7 +13,9 @@
     "url": "https://github.com/ashleygwilliams/jocular.git"
   },
   "dependencies": {
-    "hapi": "^8.6.1"
+    "hapi": "^8.6.1",
+    "knex": "^0.8.6",
+    "sqlite3": "^3.0.8"
   },
   "devDependencies": {},
   "engines": {
