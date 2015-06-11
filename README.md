@@ -1,4 +1,5 @@
-# jocular
+# jocular [![Code Climate](https://codeclimate.com/github/ashleygwilliams/jocular/badges/gpa.svg)](https://codeclimate.com/github/ashleygwilliams/jocular) [![David-DM](https://david-dm.org/ashleygwilliams/jocular.svg)](https://david-dm.org/ashleygwilliams/jocular)
+
 > a hapi/bookshelf/knex boilerplate
 
 ## up and running
