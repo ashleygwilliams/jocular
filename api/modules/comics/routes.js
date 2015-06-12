@@ -1,20 +1,14 @@
-const controller = require('./controller');
+var create = require('./routes/create.js');
+var read = require('./routes/read.js');
+var update = require('./routes/update.js');
+var del = require('./routes/delete.js');
 
-exports.register = function(server, options, next){
+var routes = [].concat(create, read, update, del);
 
-  server.route([{
-    method: 'GET',
-    path: '/comics',
-    config: {
-      handler: controller.getComics
-    }
-  }, {
-    method: 'GET',
-    path: '/comics/{id}',
-    config: {
-      handler: controller.getComic
-    }
-  }]);
+exports.register = function(server, options, next) {
+  server.route(
+    routes
+  );
 
   next();
 };
