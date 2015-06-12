@@ -16,6 +16,7 @@
   "dependencies": {
     "bookshelf": "^0.8.1",
     "hapi": "^8.6.1",
+    "joi": "^6.4.3",
     "knex": "^0.8.6",
     "sqlite3": "^3.0.8"
   },
