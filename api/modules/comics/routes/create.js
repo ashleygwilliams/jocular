@@ -5,7 +5,7 @@ module.exports = [{
   method: 'POST',
   path: '/comics',
   config: {
-    handler: controller.createComic,
+    handler: controller.create.bind(controller),
     description: 'Create a new comic object.',
     validate: {
       payload: schema
