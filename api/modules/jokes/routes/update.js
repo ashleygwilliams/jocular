@@ -5,7 +5,7 @@ module.exports = [{
   method: 'PUT',
   path: '/jokes/{id}',
   config: {
-    handler: controller.updateJoke,
+    handler: controller.update.bind(controller),
     description: 'Update a single joke object based on `id`.',
     validate: {
       payload: schema

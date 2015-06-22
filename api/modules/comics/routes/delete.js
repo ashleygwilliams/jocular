@@ -4,7 +4,7 @@ module.exports = [{
   method: 'DELETE',
   path: '/comics/{id}',
   config: {
-    handler: controller.deleteComic,
+    handler: controller.delete.bind(controller),
     description: 'Delete a comic object based on `id`.'
   }
 }];

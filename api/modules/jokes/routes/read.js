@@ -4,14 +4,14 @@ module.exports = [{
   method: 'GET',
   path: '/jokes',
   config: {
-    handler: controller.getJokes,
+    handler: controller.getAll.bind(controller),
     description: 'Retrieve a collection of joke objects.'
   }
 }, {
   method: 'GET',
   path: '/jokes/{id}',
   config: {
-    handler: controller.getJoke,
+    handler: controller.getOne.bind(controller),
     description: 'Retrieve a single joke object based on `id`.'
   }
 }, {
